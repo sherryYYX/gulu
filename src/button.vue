@@ -1,15 +1,16 @@
 <template>
   <button class="g-button" :class="{[`icon-${iconPosition}`]:true}">
-    <svg v-if="icon" class="g-icon">
-      <use :xlink:href="`#i-${icon}`"></use>
-    </svg>
+  <g-icon v-if="icon" :name="icon"></g-icon>
     <div class="content"><slot></slot></div>
   </button>
 </template>
 
 <script>
   import Vue from 'vue';
+  import Icon from "./icon"
+
  export default {
+   components: {Icon},
 // props:['icon','iconPosition']
    props:{
      icon:{},
