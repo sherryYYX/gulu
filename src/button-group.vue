@@ -5,7 +5,17 @@
 </template>
 
 <script>
-
+    export default {
+        mounted(){
+            console.log(this.$el.children)
+            for(let node of this.$el.children){
+                let name = node.nodeName.toLowerCase()
+               if(name !== "button"){
+                    console.warn(`g-button-group 的元素应该是button，你写的是${name}`)
+               }
+            }
+        }
+    }
 </script>
 
 <style lang="scss" scoped>
