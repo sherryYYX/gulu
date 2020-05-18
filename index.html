@@ -33,31 +33,51 @@
     }
   </style>
   <style>
-    .g-icon {
-      height: 1em;
-      width: 1em;
+    .box {
+      margin: 20px;
     }
   </style>
 </head>
 <body>
 <div id='app'>
-  <g-button icon="settings" icon-position="right" :loading="loading1" @click="loading1=!loading1" >
-    按钮
-  </g-button>
-  <g-button>
-    按钮
-  </g-button>
-  <g-button icon="settings" icon-position="left" :loading="loading3" @click="loading3=!loading3">
-    按钮
-  </g-button>
-  <g-icon name="up"></g-icon>
-  <g-button-group>
-    <g-button icon="left">上一页</g-button>
-    <g-button icon="right" icon-position="right">下一页</g-button>
-  </g-button-group>
-  <div id="test"></div>
+  <div>
+    <div class="box">
+      <g-input value="张三" :disabled="true"></g-input>
+      <g-input value="王五" :readonly="true">
+      </g-input>
+      <g-input value="刘六">
+      </g-input>
+    </div>
+   <div class="box">
+     <g-input value="李四"  error="姓名不能少于两个字">
+     </g-input>
+   </div>
+
+
+
+
+  </div>
+
+  <div style="margin: 20px">
+    <g-button icon="settings" icon-position="right" :loading="loading1" @click="loading1=!loading1" >
+      按钮
+    </g-button>
+    <g-button>
+      按钮
+    </g-button>
+    <g-button icon="settings" icon-position="left" :loading="loading3" @click="loading3=!loading3">
+      按钮
+    </g-button>
+    <g-icon name="up"></g-icon>
+    <g-button-group>
+      <g-button icon="left">上一页</g-button>
+      <g-button icon="right" icon-position="right">下一页</g-button>
+    </g-button-group>
+    <div id="test"></div>
+  </div>
+
 </div>
 <script src="./src/app.js"></script>
-<script src="//at.alicdn.com/t/font_1817513_afuw40apmpf.js"></script>
+<script src="//at.alicdn.com/t/font_1817513_zibb7rotuo8.js"></script>
 </body>
 </html>

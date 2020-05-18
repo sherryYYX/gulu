@@ -7,10 +7,11 @@
 </template>
 
 <script>
-  import Vue from 'vue';
+
 import Icon from './icon'
 
  export default {
+   name:'gulu-button',
    components: {
      'g-icon':Icon
    },

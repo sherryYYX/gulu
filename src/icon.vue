@@ -6,6 +6,7 @@
 
 <script>
  export default {
+   name:'gulu-icon',
    props:['name']
  }
 </script>
