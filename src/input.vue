@@ -1,6 +1,10 @@
 <template>
   <div class="wrapper" :class="{'error':error}">
-    <input type="text" :value="value" :disabled="disabled" :readonly="readonly">
+    <input type="text" :value="value" :disabled="disabled" :readonly="readonly"
+    @change="$emit('change',$event.target.value)"
+    @input="$emit('input',$event.target.value)"
+           @focus="$emit('focus',$event.target.value)"
+           @blur="$emit('blur',$event.target.value)">
     <template v-if="error">
       <icon name="error" class="error-icon"></icon>
       <span class="error-massage">{{error}}</span>
@@ -35,14 +39,6 @@
 </script>
 
 <style lang="scss" scoped>
-  /*--button-height: 32px;*/
-  /*--font-size: 14px;*/
-  /*--button-bg: white;*/
-  /*--button-active-bg: #eee;*/
-  /*--border-radius: 4px;*/
-  /*--color: #333;*/
-  /*--border-color: #999;*/
-  /*--border-color-hover: #666;*/
   $font-size:14px;
   $height:32px;
   $border-color:#999;
