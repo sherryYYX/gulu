@@ -12,10 +12,11 @@ Vue.component('g-button-group',ButtonGroup)
 
 new Vue({
   el:'#app',
-  data:{
-    loading1:true,
-    loading2:true,
-    loading3:true
+  data: {
+    loading1: true,
+    loading2: true,
+    loading3: true,
+    message: 'hi',
   },
   methods:{
     inputChange(e){
