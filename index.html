@@ -41,48 +41,54 @@
 </head>
 
 <body>
-<div id='app'>
-  
-  <g-row>
-    <g-col>1</g-col>
-    <g-col>2</g-col>
-  </g-row>
-  <g-row>
-    <g-col>1</g-col>
-    <g-col>2</g-col>
-    <g-col>3</g-col>
-  </g-row>
-  <g-row>
-    <g-col>1</g-col>
-    <g-col>2</g-col>
-    <g-col>3</g-col>
-    <g-col>4</g-col>
-  </g-row>
-  <g-row>
-    <g-col span="2">2</g-col>
-    <g-col span="22">22</g-col>
-  </g-row>
-  <g-row>
-    <g-col span="4">2</g-col>
-    <g-col span="20">22</g-col>
-  </g-row>
-  <div>
-    <div class="box">
-      <g-input value="张三" :disabled="true"></g-input>
-      <g-input value="王五" :readonly="true">
-      </g-input>
-      <g-input value="刘六">
-      </g-input>
+  <div id='app'>
+    <div style="border: 1px solid black">
+      <g-row gutter="20">
+        <g-col>1</g-col>
+        <g-col>2</g-col>
+      </g-row>
+      <g-row gutter="20">
+        <g-col>1</g-col>
+        <g-col>2</g-col>
+        <g-col>3</g-col>
+      </g-row>
+      <g-row gutter="20">
+        <g-col>1</g-col>
+        <g-col>2</g-col>
+        <g-col>3</g-col>
+        <g-col>4</g-col>
+      </g-row>
+      <g-row gutter="20">
+        <g-col span="2">2</g-col>
+        <g-col span="22" offset="2">22</g-col>
+      </g-row>
+      <g-row gutter="20">
+        <g-col span="4">2</g-col>
+        <g-col span="20">22</g-col>
+      </g-row>
     </div>
-   <div class="box">
-     <g-input value="李四"  error="姓名不能少于两个字">
-     </g-input>
-     <g-input v-model="message">
-     </g-input>
-   </div>
-  </div>
 
-  <div style="margin: 20px">
+
+
+    <div>
+      <div class="box">
+        <g-input value="张三" :disabled="true"></g-input>
+        <g-input value="王五" :readonly="true">
+        </g-input>
+        <g-input value="刘六">
+        </g-input>
+      </div>
+
+      <div class="box">
+        <g-input value="李四"  error="姓名不能少于两个字">
+        </g-input>
+        <g-input v-model="message">
+        </g-input>
+      </div>
+    </div>
+
+
+    <div style="margin: 20px">
     <g-button icon="settings" icon-position="right" :loading="loading1" @click="loading1=!loading1" >
       按钮
     </g-button>
@@ -99,9 +105,9 @@
     </g-button-group>
     <div id="test"></div>
   </div>
+  </div>
+  <script src="./src/app.js"></script>
 
-</div>
-<script src="./src/app.js"></script>
-<script src="//at.alicdn.com/t/font_1817513_zibb7rotuo8.js"></script>
-</body>
+  <script src="//at.alicdn.com/t/font_1817513_zibb7rotuo8.js"></script>
+  </body>
 </html>
