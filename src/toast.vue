@@ -82,12 +82,7 @@
   $line-height: 40px;
   $toast-min-height: 40px;
   $toast-bg:rgba(0,0,0,0.75);
-  @keyframes fade-in {
-    0%{opacity: 0}
-    100%{opacity: 1}
-  }
   .toast{
-    animation: fade-in 1s;
     min-height: $toast-min-height;
     line-height: $line-height;
     position: fixed;
