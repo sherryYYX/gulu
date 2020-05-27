@@ -1,5 +1,5 @@
 <template>
- <div class="toast" ref="toast" :class="toastClasses">
+ <div class="toast" ref="toast">
    <div class="message">
      <slot></slot>
    </div>
@@ -16,20 +16,13 @@
   export default {
      name:'gulu-toast',
     props:{
-      position: {
-        type: String,
-        default: 'top',
-        validator (value) {
-          return ['top', 'bottom', 'middle'].indexOf(value) >= 0
-        }
-      },
        autoClose:{
          type:Boolean,
          default:true
        },
       autoCloseDelay:{
          type:Number,
-          default:8
+          default:50
       },
       closeButton:{
          type:Object,
@@ -38,16 +31,14 @@
             text:'关闭', undefined
           }
         }
-      }
+      },
     },
+
     mounted() {
       this.updateClose()
       this.exacAutoClose()
-    },
-    computed: {
-      toastClasses () {
-        return `position-${this.position}`
-      }
+
+
     },
     methods:{
       updateClose(){
@@ -85,6 +76,9 @@
     min-height: $toast-min-height;
     line-height: $line-height;
     position: fixed;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 14px;
     display: flex;
     align-items: center;
@@ -93,19 +87,6 @@
     box-shadow: 0 0 3px 0 rgba(0,0,0,0.75);
     color:white;
     padding:0 16px;
-    left: 50%;
-    &.position-top{
-      top:0;
-      transform: translateX(-50%);
-    }
-    &.position-bottom{
-      bottom:0;
-      transform: translateX(-50%);
-    }
-    &.position-middle{
-      top:50%;
-      transform: translate(-50%,-50%);
-    }
     .message{
       padding-right:16px;
     }

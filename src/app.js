@@ -37,16 +37,8 @@ new Vue({
     message: 'hi',
   },
   created(){
-    this.$toast('要充值智商税',{
-      position:'middle',
-      closeButton:{
-        text:'已充值',
-        callback(){
-          console.log('已充值智商税')
-        },
-      },
-      autoClose:false,
-      autoCloseDelay: 1000
+    this.$toast('我知道了',{
+
     })
   },
   methods:{
