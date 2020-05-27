@@ -37,9 +37,7 @@ new Vue({
     message: 'hi',
   },
   created(){
-    this.$toast('我知道了',{
-
-    })
+    this.$toast('我知道了')
   },
   methods:{
    showToast(){
