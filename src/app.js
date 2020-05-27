@@ -40,18 +40,9 @@ new Vue({
 
   },
   methods:{
-    showToast1(){
-      this.showToast('top')
-    },
-    showToast2(){
-      this.showToast('middle')
-    },
-    showToast3(){
-      this.showToast('bottom')
-    },
-   showToast(position){
+   showToast(){
      this.$toast(`要充值智商税${parseInt(Math.random()*100)}`,{
-       position,
+       position:'middle',
        closeButton:{
          text:'已充值',
          callback(){
