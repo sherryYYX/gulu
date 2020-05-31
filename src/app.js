@@ -13,8 +13,18 @@ import Footer from './footer'
 import Toast from './toast'
 import Plugin from './plugin'
 import plugin from "./plugin"
+import Tab from './tabs'
+import TabHead from './tabs-head'
+import TabItem from './tabs-item'
+import TabBody from './tabs-body'
+import TabPane from './tabs-pane'
 
 
+Vue.component('g-tab-pane',TabPane)
+Vue.component('g-tab-item',TabItem)
+Vue.component('g-tab-body',TabBody)
+Vue.component('g-tab-head',TabHead)
+Vue.component('g-tab',Tab)
 Vue.component('g-header',Header)
 Vue.component('g-layout',Layout)
 Vue.component('g-sider',Sider)
@@ -31,6 +41,7 @@ Vue.use(plugin)
 new Vue({
   el:'#app',
   data: {
+    selectedTab:'car',
     loading1: true,
     loading2: true,
     loading3: true,
