@@ -42,10 +42,6 @@ new Vue({
   el:'#app',
   data: {
     selectedTab:'car',
-    loading1: true,
-    loading2: true,
-    loading3: true,
-    message: 'hi',
   },
   created(){
 
