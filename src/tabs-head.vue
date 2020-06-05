@@ -7,7 +7,11 @@
 
 <script>
   export default {
-    name:'gulu-tabs-head'
+    name:'gulu-tabs-head',
+    inject:['eventBus'],
+    created() {
+
+    }
   }
 </script>
 

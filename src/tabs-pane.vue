@@ -6,7 +6,13 @@
 
 <script>
   export default {
-    name:'gulu-tabs-pane'
+    name:'gulu-tabs-pane',
+    inject:['eventBus'],
+    created() {
+      this.eventBus.$on('update:selected',(name)=>{
+        console.log(name)
+      })
+    }
   }
 </script>
 
