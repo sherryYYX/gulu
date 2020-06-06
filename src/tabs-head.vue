@@ -31,6 +31,7 @@
   $tab-height:40px;
   $blue:blue;
   .tabs-head{
+    border-bottom: 1px solid #ddd;
     display: flex;
     height: $tab-height;
     justify-content: flex-start;
@@ -43,6 +44,10 @@
     }
     > .actions-wrapper{
       margin-left: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 1em;
     }
   }
 </style>
