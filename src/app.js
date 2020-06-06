@@ -18,8 +18,9 @@ import TabHead from './tabs-head'
 import TabItem from './tabs-item'
 import TabBody from './tabs-body'
 import TabPane from './tabs-pane'
+import Popover from './popover'
 
-
+Vue.component('g-popover',Popover)
 Vue.component('g-tab-pane',TabPane)
 Vue.component('g-tab-item',TabItem)
 Vue.component('g-tab-body',TabBody)

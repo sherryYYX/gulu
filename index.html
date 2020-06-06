@@ -34,35 +34,13 @@
 </head>
 
 <body>
-  <div id='app'>
-    <g-tab :selected.sync="selectedTab">
-      <g-tab-head>
-        <template slot="actions">
-          <button>设置</button>
-        </template>
-        <g-tab-item name="sport">
-          <g-icon name="settings"></g-icon>
-          体育
-        </g-tab-item>
-        <g-tab-item name="women" disabled>
-          美女
-        </g-tab-item>
-        <g-tab-item name="car">
-          汽车
-        </g-tab-item>
-      </g-tab-head>
-      <g-tab-body>
-        <g-tab-pane name="sport">
-          内容是体育面板
-        </g-tab-pane>
-        <g-tab-pane name="women">
-          内容是美女面板
-        </g-tab-pane>
-        <g-tab-pane name="car">
-          内容是汽车面板
-        </g-tab-pane>
-      </g-tab-body>
-    </g-tab>
+  <div id='app' style="padding-top: 100px; padding-left: 100px">
+    <g-popover>
+      <template slot="content">
+        <div>popover 内容1</div>
+      </template>
+        <button>点我</button>
+    </g-popover>
   </div>
 
   <script src="./src/app.js"></script>
