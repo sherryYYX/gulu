@@ -1,5 +1,5 @@
 <template>
-  <div class="popover"  @click="xxx">
+  <div class="popover"  @click="onClick" ref="popover">
     <div ref="contentWrapper" class="content-wrapper" v-if="visible">
       <slot name="content"></slot>
     </div>
@@ -14,22 +14,35 @@
     name:'gulu-popover',
     data(){return{visible:false}},
     methods:{
-      xxx(){
-       this.visible=!this.visible
-        console.log('visable 切换')
-        if(this.visible===true){
-          setTimeout(()=>{
-            document.body.appendChild(this.$refs.contentWrapper)
-            let {height,width,top,left}=this.$refs.triggerWrapper.getBoundingClientRect()
-            this.$refs.contentWrapper.style.left = left + window.scrollX + 'px'
-            this.$refs.contentWrapper.style.top = top  +window.scrollY + 'px'
-            console.log('新增document 监听器')
-            let eventHandler = ()=>{
-              this.visible=false
-              document.removeEventListener('click',eventHandler)
-            }
-            document.addEventListener('click',eventHandler)
-          })
+      positionContent(){
+        document.body.appendChild(this.$refs.contentWrapper)
+        let {height,width,top,left}=this.$refs.triggerWrapper.getBoundingClientRect()
+        this.$refs.contentWrapper.style.left = left + window.scrollX + 'px'
+        this.$refs.contentWrapper.style.top = top  +window.scrollY + 'px'
+      },
+      onClickDocument (event){
+        if(this.$refs.contentWrapper.contains(event.target)){return}else{
+          this.close()
+        }
+      },
+      close(){
+        this.visible=false
+        document.removeEventListener('click',this.onClickDocument)
+      },
+      open(){
+        this.visible=true
+        setTimeout(()=>{
+          this.positionContent()
+          document.addEventListener('click',this.onClickDocument)
+        })
+      },
+      onClick (e){
+        if(this.$refs.triggerWrapper.contains(e.target)){
+           if(this.visible===true){
+             this.close()
+           }else {
+             this.open()
+           }
         }
       }
     },
