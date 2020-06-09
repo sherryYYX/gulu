@@ -167,9 +167,11 @@
       }
       &::before{
         border-bottom-color: black;
+        border-top:none;
         bottom:100%;
       }
       &::after{
+        border-top:none;
         border-bottom-color: white;
         bottom:calc(100% - 1px);
       }

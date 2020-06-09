@@ -11,7 +11,6 @@ import Sider from './sider'
 import  Content from './content'
 import Footer from './footer'
 import Toast from './toast'
-import Plugin from './plugin'
 import plugin from "./plugin"
 import Tab from './tabs'
 import TabHead from './tabs-head'
@@ -19,7 +18,11 @@ import TabItem from './tabs-item'
 import TabBody from './tabs-body'
 import TabPane from './tabs-pane'
 import Popover from './popover'
+import Collapse from './collapse'
+import CollapseItem from './collapse-item'
 
+Vue.component('g-collapse-item',CollapseItem)
+Vue.component('g-collapse',Collapse)
 Vue.component('g-popover',Popover)
 Vue.component('g-tab-pane',TabPane)
 Vue.component('g-tab-item',TabItem)
