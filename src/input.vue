@@ -44,7 +44,7 @@
   $border-color:#999;
   $border-color-hover:#666;
   $border-radius:4px;
-  $box-shadow-color:rgb(0,0,0,0.5);
+  $box-shadow-color:rgba(0,0,0,0.5);
   $red:#f1453d;
 .wrapper{display: inline-flex;align-items: center;
   font-size: $font-size;

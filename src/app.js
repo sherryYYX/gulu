@@ -46,7 +46,7 @@ new Vue({
   el:'#app',
   data: {
     selectedTab:'car',
-    selectedNumber:'3'
+    selectedNumber:['2']
   },
   created(){
 
