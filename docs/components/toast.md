@@ -1,8 +1,8 @@
 ---
-title:Toast
+title:toast
 ---
-# Toast
-使用方法
+# toast 
+toast 组件
 <ClientOnly>
-    <button-demos></button-demos>
+  <toast-demos></toast-demos>
 </ClientOnly>

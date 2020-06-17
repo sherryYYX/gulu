@@ -10,7 +10,6 @@ import Layout from './layout'
 import Sider from './sider'
 import  Content from './content'
 import Footer from './footer'
-import Toast from './toast'
 import plugin from "./plugin"
 import Tab from './tabs'
 import TabHead from './tabs-head'
@@ -42,13 +41,15 @@ Vue.component('g-icon',Icon)
 Vue.component('g-button-group',ButtonGroup)
 Vue.use(plugin)
 
+
+
 new Vue({
   el:'#app',
   data: {
     selectedTab:'car',
     selectedNumber:['2']
   },
-  created(){
+  mounted(){
 
   },
   methods:{

@@ -2,7 +2,9 @@
 title:Popover - 弹出层
 ---
 # 弹出层
-使用方法
+
+popover 组件
 <ClientOnly>
-    <button-demos></button-demos>
+    <popover-demos></popover-demos>
+    <popover-demo2></popover-demo2>
 </ClientOnly>

@@ -2,7 +2,9 @@
 title:Grid
 ---
 # 网格
-使用方法
+grid 组件
 <ClientOnly>
-    <button-demos></button-demos>
+    <grid-demos></grid-demos>
+    <grid-demo2></grid-demo2>
+    <grid-demo3></grid-demo3>
 </ClientOnly>

@@ -2,7 +2,8 @@
 title:Layout - 布局
 ---
 # 布局
-使用方法
+layout 组件
 <ClientOnly>
-    <button-demos></button-demos>
+    <layout-demos></layout-demos>
+    <layout-demo2></layout-demo2>
 </ClientOnly>

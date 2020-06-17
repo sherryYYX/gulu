@@ -1,8 +1,9 @@
 ---
-title:Button - 按钮
+title:button
 ---
 # 按钮
-使用方法
+button 组件
 <ClientOnly>
-    <button-demos></button-demos>
+  <button-demos></button-demos>
 </ClientOnly>
+

@@ -2,7 +2,9 @@
 title:Input
 ---
 # 输入框
-使用方法
+input 组件
 <ClientOnly>
-    <button-demos></button-demos>
+  <input-demos></input-demos>
+   <input-demo2></input-demo2>
 </ClientOnly>
+

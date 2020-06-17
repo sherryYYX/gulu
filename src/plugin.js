@@ -1,5 +1,4 @@
 import Toast from './toast'
-import toast from "./toast"
 
 let currentToast
 export default {

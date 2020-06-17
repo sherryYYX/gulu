@@ -102,6 +102,7 @@
     left: 50%;
     transform: translateX(-50%);
     &.position-top{
+      z-index: 30 !important;
       top:0;
       .toast{
         border-top-left-radius: 0;

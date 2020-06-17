@@ -25,8 +25,11 @@
   },
   "homepage": "https://github.com/sherryYYX/gulu#readme",
   "dependencies": {
+    "babel-plugin-prismjs": "^2.0.1",
+    "prismjs": "^1.20.0",
     "vue": "^2.6.11",
     "vue-hot-reload-api": "^2.3.4",
+    "vue-prism-component": "^1.2.0",
     "vue-property-decorator": "^8.4.2"
   },
   "devDependencies": {
@@ -47,6 +50,7 @@
     "sinon": "^9.0.2",
     "sinon-chai": "^3.5.0",
     "typescript": "^3.9.2",
+    "vue-prism": "^1.0.5",
     "vue-template-compiler": "^2.6.11",
     "vuepress": "^1.5.1"
   },

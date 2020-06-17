@@ -2,7 +2,7 @@
 title:Tabs - 标签
 ---
 # 标签
-使用方法
+tab 组件
 <ClientOnly>
-    <button-demos></button-demos>
+  <tabs-demos></tabs-demos>
 </ClientOnly>
