@@ -1,18 +1,9 @@
 <template>
-  <div>
-    <h2>简单用法</h2>
-    <p>
-      <strong>预览</strong>
-    </p>
+  <div class="container1">
     <g-input></g-input>
-    <g-input value="中文"></g-input>
-    <g-input value="中文" disabled></g-input>
-    <g-input value="中文" readonly></g-input>
-
-    <p>
-      <strong>代码</strong>
-    </p>
-    <pre><code>{{content}}</code></pre>
+    <g-input value="默认"></g-input>
+    <g-input value="禁用" disabled></g-input>
+    <g-input value="只读" readonly></g-input>
   </div>
 </template>
 <script>
@@ -21,18 +12,16 @@
     components:{
       'g-input':Input,
     },
-    data(){
-      return{
-        content:`
-    <g-input></g-input>
-    <g-input value="中文"></g-input>
-    <g-input value="中文" disabled></g-input>
-    <g-input value="中文" readonly></g-input>
-`.replace(/\t+| +/g, '').trim()
-      }
-    }
   }
 </script>
-
+<style scoped>
+  .container1 {
+    max-width: 800px;
+    margin: 30px auto;
+    border-radius: 4px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+    padding: 15px;
+  }
+</style>
 
 

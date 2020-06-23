@@ -132,7 +132,7 @@
     font-size: 14px;
     display: flex;
     align-items: center;
-    background: $toast-bg;
+    background: #33b47a;
     border-radius: 4px;
     box-shadow: 0 0 3px 0 rgba(0,0,0,0.75);
     color:white;

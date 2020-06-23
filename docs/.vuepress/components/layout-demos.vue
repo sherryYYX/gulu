@@ -1,9 +1,5 @@
 <template>
-  <div>
-    <h2>布局</h2>
-    <p>
-      <strong>预览</strong>
-    </p>
+  <div class="container1">
     <g-layout style="color: white; margin-bottom:50px;">
       <g-header cla="header">
         header
@@ -15,11 +11,6 @@
         footer
       </g-footer>
     </g-layout>
-
-    <p>
-      <strong>代码</strong>
-    </p>
-    <pre><code>{{content}}</code></pre>
   </div>
 </template>
 <script>
@@ -35,26 +26,9 @@
       'g-content':Content,
 
     },
-    data(){
-      return{
-        content:`
-             <g-layout style="color: white; margin-bottom:50px;">
-      <g-header cla="header">
-        header
-      </g-header>
-      <g-content class="content">
-        content
-      </g-content>
-      <g-footer class="footer">
-        footer
-      </g-footer>
-    </g-layout>
-`.replace(/\t+| +/g, '').trim()
-      }
-    }
   }
 </script>
-<style scoped lang="scss">
+<style scoped>
   .header{
     height: 50px;
     background: #81e2ac;
@@ -66,6 +40,13 @@
   .footer{
     height: 50px;
     background:#81e2ac;
+  }
+  .container1 {
+    max-width: 800px;
+    margin: 30px auto;
+    border-radius: 4px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+    padding: 15px;
   }
 
 </style>

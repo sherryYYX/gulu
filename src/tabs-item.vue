@@ -50,7 +50,7 @@
 </script>
 
 <style scoped lang="scss">
-  $color:blue;
+  $color: #19ac53;
   $disabled-color:#ccc;
   .tabs-item{
     display: flex;

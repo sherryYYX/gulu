@@ -30,7 +30,7 @@
 
 <style scoped lang="scss">
   $tab-height:40px;
-  $blue:blue;
+  $blue: #19ac53;
   .tabs-head{
     border-bottom: 1px solid #ddd;
     display: flex;

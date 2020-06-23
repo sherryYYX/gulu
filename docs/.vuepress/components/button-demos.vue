@@ -1,18 +1,8 @@
 <template>
-  <div>
-    <h2>简单用法</h2>
-    <p>
-      <strong>预览</strong>
-    </p>
+  <div class="container1">
     <g-button :loading="true">默认按钮</g-button>
-    <g-button icon="settings">设置按钮</g-button>
+    <g-button icon="settings" >设置按钮</g-button>
     <g-button :loading="true">加载中</g-button>
-
-    <p>
-      <strong>代码</strong>
-    </p>
-
-    <pre><code>{{content}}</code></pre>
   </div>
 </template>
 <script>
@@ -21,14 +11,14 @@
     components:{
       'g-button':Button,
     },
-    data(){
-      return{
-        content:`
-              <g-button :loading="true">默认按钮</g-button>
-              <g-button icon="settings">设置按钮</g-button>
-              <g-button :loading="true">加载中</g-button>
-`.replace(/\t+| +/g, '').trim()
-      }
-    }
   }
 </script>
+<style scoped>
+  .container1 {
+    max-width: 800px;
+    margin: 30px auto;
+    border-radius: 4px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+    padding: 15px;
+  }
+</style>

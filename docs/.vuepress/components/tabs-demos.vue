@@ -1,18 +1,17 @@
 <template>
-  <div>
-    <h2>简单用法</h2>
-    <p>预览</p>
+  <div class="container1">
     <g-tab :selected="selected">
       <g-tabs-head>
-        <g-tabs-item name="1">1</g-tabs-item>
-        <g-tabs-item name="2">2</g-tabs-item>
+        <g-tabs-item name="longOne">这是一个长长长长的 tab1 </g-tabs-item>
+        <g-tabs-item name="short">这是一个短 tab</g-tabs-item>
+        <g-tabs-item name="long2" disabled>这是一个禁用的长长的 tab2 </g-tabs-item>
       </g-tabs-head>
       <g-tabs-body>
-        <g-tabs-pane name="1">content 1</g-tabs-pane>
-        <g-tabs-pane name="2">content 2</g-tabs-pane>
+        <g-tabs-pane name="longOne">这是一个长长的 tab1 的内容</g-tabs-pane>
+        <g-tabs-pane name="short">这是一个短 tab 的内容</g-tabs-pane>
+        <g-tabs-pane name="long2">这是一个禁用的长长 tab2 的内容</g-tabs-pane>
       </g-tabs-body>
     </g-tab>
-    <pre><code>{{content}}</code></pre>
   </div>
 </template>
 <script>
@@ -31,19 +30,17 @@
     },
     data(){
      return{
-       selected:'1',
-       content:`<g-tab :selected="selected">
-      <g-tabs-head>
-        <g-tabs-item name="1">1</g-tabs-item>
-        <g-tabs-item name="2">2</g-tabs-item>
-      </g-tabs-head>
-      <g-tabs-body>
-        <g-tabs-pane name="1">content 1</g-tabs-pane>
-        <g-tabs-pane name="2">content 2</g-tabs-pane>
-      </g-tabs-body>
-    </g-tab>
-`.replace(/\t+| +/g, '')
+       selected:'longOne',
      }
     }
   }
 </script>
+<style scoped>
+  .container1 {
+    max-width: 800px;
+    margin: 30px auto;
+    border-radius: 4px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+    padding: 15px;
+  }
+</style>

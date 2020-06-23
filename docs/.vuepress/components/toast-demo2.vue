@@ -1,18 +1,8 @@
 <template>
-  <div style="padding-top: 16px;">
-    <h2>设置关闭按钮</h2>
-    <p>
-      <strong>预览</strong>
-    </p>
-
+  <div style="padding-top: 16px;" class="container1">
     <div>
       <g-button @click="onClickButton">上方弹出</g-button>
     </div>
-
-    <p>
-      <strong>代码</strong>
-    </p>
-    <pre><code>{{content}}</code></pre>
   </div>
 </template>
 <style>
@@ -32,27 +22,6 @@
   Vue.use(plugin)
   export default {
     components: {GButton},
-    data () {
-      return {
-        content: `
-          <div>
-            <g-button @click="onClickButton">上方弹出</g-button>
-          </div>
-          methods: {
-            onClickButton () {
-              this.$toast('你需要充话费了', {
-                closeButton: {
-                  text: '知道了',
-                  callback: () => {
-                    console.log('知道了')
-                  }
-                }
-              })
-            }
-          },
-      `.replace(/^ {8}/gm, '').trim()
-      }
-    },
     methods: {
       onClickButton () {
         this.$toast('你需要充话费了', {
@@ -67,3 +36,12 @@
     },
   }
 </script>
+<style scoped>
+  .container1 {
+    max-width: 800px;
+    margin: 30px auto;
+    border-radius: 4px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+    padding: 15px;
+  }
+</style>
