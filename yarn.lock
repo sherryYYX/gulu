@@ -2460,6 +2460,11 @@ babel-plugin-dynamic-import-node@^2.3.3:
   dependencies:
     object.assign "^4.1.0"
 
+babel-plugin-prismjs@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-prismjs/-/babel-plugin-prismjs-2.0.1.tgz#b56095f423926662259de8f5ee50a7afbcf0fd92"
+  integrity sha512-GqQGa3xX3Z2ft97oDbGvEFoxD8nKqb3ZVszrOc5H7icnEUA56BIjVYm86hfZZA82uuHLwTIfCXbEKzKG1BzKzg==
+
 babel-runtime@^6.11.6, babel-runtime@^6.26.0:
   version "6.26.0"
   resolved "https://registry.npm.taobao.org/babel-runtime/download/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
@@ -5260,9 +5265,9 @@ hogan.js@^3.0.2:
     nopt "1.0.10"
 
 hosted-git-info@^2.1.4:
-  version "2.8.8"
-  resolved "https://registry.npm.taobao.org/hosted-git-info/download/hosted-git-info-2.8.8.tgz#7539bd4bc1e0e0a895815a2e0262420b12858488"
-  integrity sha1-dTm9S8Hg4KiVgVouAmJCCxKFhIg=
+  version "2.8.9"
+  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.9.tgz#dffc0bf9a21c02209090f2aa69429e1414daf3f9"
+  integrity sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==
 
 hpack.js@^2.1.6:
   version "2.1.6"
@@ -8147,6 +8152,13 @@ prismjs@^1.13.0:
   optionalDependencies:
     clipboard "^2.0.0"
 
+prismjs@^1.20.0, prismjs@^1.6.0:
+  version "1.23.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.23.0.tgz#d3b3967f7d72440690497652a9d40ff046067f33"
+  integrity sha512-c29LVsqOaLbBHuIbsTxaKENh1N2EQBOHaWv7gkHN4dgRbxSREqDnDbtFJYdpPauS4YCplMSNCABQ6Eeor69bAA==
+  optionalDependencies:
+    clipboard "^2.0.0"
+
 private@^0.1.8:
   version "0.1.8"
   resolved "https://registry.npm.taobao.org/private/download/private-0.1.8.tgz#2381edb3689f7a53d653190060fcf822d2f368ff"
@@ -10229,6 +10241,13 @@ vue-prism-component@^1.2.0:
   version "1.2.0"
   resolved "https://registry.npm.taobao.org/vue-prism-component/download/vue-prism-component-1.2.0.tgz#406252e16979def13b5d28827d95b2b6dc647825"
   integrity sha1-QGJS4Wl53vE7XSiCfZWyttxkeCU=
+
+vue-prism@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/vue-prism/-/vue-prism-1.0.5.tgz#6e7777adb2fa11c0a8cb99e0265112a105549550"
+  integrity sha1-bnd3rbL6EcCoy5ngJlESoQVUlVA=
+  dependencies:
+    prismjs "^1.6.0"
 
 vue-property-decorator@^8.4.2:
   version "8.4.2"
